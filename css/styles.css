@@ -150,3 +150,11 @@ a{
     align-items: center;
     border-radius: 100%;
 }
+
+/* Buttons */
+.button{
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: inline-block;
+}
