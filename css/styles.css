@@ -129,7 +129,6 @@ a {
 .list--tick {
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
-  color: var(--color-heading);
 }
 .list--tick .list__item {
   padding-left: 0.5rem;
@@ -182,7 +181,7 @@ a {
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 3vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -253,6 +252,7 @@ a {
   border-radius: var(--border-radius);
   outline: 0;
   font-size: 2rem;
+  width: 0;
 }
 ::placeholder {
   color: #cdcbd7;
@@ -385,10 +385,11 @@ a {
 
 /* Quote */
 .quote {
-  font-size: 3rem;
+  font-size: 2.2rem;
   color: var(--color-body-darker);
   font-style: italic;
   line-height: 1.3;
+  margin: 2rem 0;
 }
 .quote__text::before {
   content: open-quote;
@@ -398,14 +399,14 @@ a {
 }
 .quote__author {
   font-style: normal;
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 500;
   margin-bottom: 0;
 }
 .author__company {
   font-style: normal;
   opacity: 0.4;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--color-heading);
 }
 .quote__line {
@@ -443,9 +444,10 @@ a {
 
 /* Testimonials */
 .testimonial {
-  padding: 6rem;
+  padding: 3rem;
 }
 .testimonial__image {
+  margin: 0 3rem;
   position: relative;
 }
 .testimonial__image > img {
@@ -468,8 +470,8 @@ a {
 
 /* Callout */
 .callout {
-  padding: 4rem;
-  border-radius: 5px;
+  padding: 2rem 4rem;
+  border-radius: 10px;
 }
 .callout__content {
   text-align: center;
@@ -480,6 +482,7 @@ a {
 }
 .callout__heading {
   color: #fff;
+  margin-top: 0;
 }
 .callout .btn {
   justify-self: center;
@@ -653,12 +656,13 @@ a {
 .block-domain__prices {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 6rem);
+  grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   font-weight: 600;
   font-size: 2rem;
   max-width: 700px;
   margin: 0 auto;
+  color: var(--color-heading);
 }
 @media screen and (min-width: 768px) {
   .block-domain__prices {
@@ -781,4 +785,9 @@ a {
   .footer__section .list {
     margin: 0;
   }
+}
+
+/* Callout sign-up */
+.callout-signup {
+  transform: translateY(5rem);
 }
