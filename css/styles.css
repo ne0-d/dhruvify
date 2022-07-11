@@ -154,6 +154,7 @@ a {
   width: 30px;
   height: 30px;
 }
+
 .icon--primary {
   fill: var(--color-primary);
 }
@@ -185,6 +186,8 @@ a {
   text-transform: uppercase;
   white-space: nowrap;
   margin: 1rem 0;
+  cursor: pointer;
+  outline: none;
 }
 .btn--primary {
   background: var(--color-primary);
@@ -216,6 +219,12 @@ a {
 .btn--stretched {
   padding-left: 6rem;
   padding-right: 6rem;
+}
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 @media screen and (min-width: 1024px) {
   .btn {
@@ -255,7 +264,7 @@ a {
 .input-group .input {
   border: none;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 .input-group .btn {
   border: none;
@@ -610,5 +619,32 @@ a {
   .hero .container {
     margin-left: 8rem;
     margin-right: 8rem;
+  }
+}
+
+/* Domain block */
+.block-domain {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  max-width: 670px;
+  margin: 4rem auto;
+}
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 6rem);
+  justify-items: center;
+  font-weight: 600;
+  font-size: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
